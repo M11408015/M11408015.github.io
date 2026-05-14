@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【耳朵懷孕指南】從搖滾披頭四到 TikTok 洗腦歌</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'Noto Sans TC', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#0a0a0a',
+                            white: '#f8f9fa',
+                            accent: '#ff2d55', // TikTok-ish Pink
+                            cyan: '#00f2ea',   // Cyber Cyan
+                            purple: '#8a2be2',
+                        }
+                    },
+                    animation: {
+                        'gradient-x': 'gradient-x 15s ease infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        'gradient-x': {
+                            '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+                            '50%': { 'background-size': '200% 200%', 'background-position': 'right center' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ff2d55, #00f2ea, #8a2be2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-item {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .bento-item:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        body {
+            background-color: #0a0a0a;
+            color: #f8f9fa;
+            overflow-x: hidden;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="custom-scrollbar">
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center p-6 overflow-hidden">
+        <!-- Background Animation Elements -->
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-brand-accent opacity-20 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-brand-cyan opacity-20 blur-[120px] rounded-full"></div>
+        
+        <div class="z-10 text-center max-w-4xl mx-auto space-y-8">
+            <div class="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest uppercase border border-brand-accent text-brand-accent rounded-full animate-pulse">
+                Music Analysis & Future Trends
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl font-black font-display leading-tight tracking-tighter">
+                【耳朵懷孕指南】<br/>
+                <span class="text-gradient">Pop Music Evolution</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-400 font-light max-w-2xl mx-auto leading-relaxed">
+                學號：M11408015 | 從搖滾披頭四到 TikTok 洗腦歌：流行音樂到底是怎麼征服全球的？
+            </p>
+
+            <!-- Main Banner Image Wrapper -->
+            <div class="mt-12 relative group">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-accent to-brand-cyan opacity-20 blur-2xl group-hover:opacity-40 transition-opacity duration-500"></div>
+                <div class="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-brand-accent/20">
+                    <img src='https://opal.google/board/blobs/b17d4df3-f407-45df-b3d6-b48043e50c42' alt='Pop Music Evolution' class="w-full h-auto transform group-hover:scale-105 transition-transform duration-700 ease-out" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-32">
+        
+        <!-- Intro Section -->
+        <section class="max-w-3xl mx-auto text-center space-y-8">
+            <p class="text-2xl font-medium leading-relaxed italic text-gray-200">
+                「明明不特別喜歡某首歌，但那段旋律卻像住在腦子裡一樣，揮之不去？」
+            </p>
+            <p class="text-gray-400 text-lg leading-loose">
+                恭喜你，你被「流行音樂」（Pop Music）寄生了。這不是什麼神祕的詛咒，而是一場跨越半個世紀、結合了心理學、商業精密計算與科技演進的全球征服行動。身為當代聽眾，我們有必要拆解這場關於耳朵的盛宴。
+            </p>
+        </section>
+
+        <!-- Bento Grid: Definition & Evolution -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Box 1: Definition -->
+            <div class="md:col-span-2 glass-card p-10 flex flex-col justify-between bento-item">
+                <div class="space-y-4">
+                    <span class="text-brand-cyan font-display font-bold text-sm tracking-widest">CHAPTER 01</span>
+                    <h2 class="text-4xl font-black">流行音樂，你是誰？</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        流行音樂（Pop Music）最早出現在 1950 年代。它是一門精準的心理學：追求「耳蟲（Hook）」與「2 至 4 分鐘的黃金時長」。它在創新與熟悉感之間走鋼索。
+                    </p>
+                </div>
+                <div class="mt-8 flex gap-4">
+                    <span class="px-3 py-1 bg-white/5 rounded text-xs text-brand-cyan">#Earworm</span>
+                    <span class="px-3 py-1 bg-white/5 rounded text-xs text-brand-cyan">#GoldenTime</span>
+                </div>
+            </div>
+
+            <!-- Box 2: Modern Icon -->
+            <div class="glass-card p-10 bento-item bg-gradient-to-br from-brand-accent/20 to-transparent flex items-center justify-center">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">🎵</div>
+                    <div class="text-2xl font-bold font-display">Commercial Art</div>
+                    <p class="text-xs text-gray-500 uppercase mt-2">商務與藝術的混血兒</p>
+                </div>
+            </div>
+
+            <!-- Box 3: Timeline Evolution (Vertical) -->
+            <div class="glass-card p-8 bento-item space-y-6">
+                <h3 class="text-xl font-bold border-l-4 border-brand-cyan pl-4">時光機啟動</h3>
+                <div class="space-y-6">
+                    <div class="relative pl-6 border-l border-white/10 pb-2">
+                        <div class="absolute -left-1.5 top-0 w-3 h-3 bg-brand-cyan rounded-full"></div>
+                        <h4 class="font-bold text-sm text-brand-cyan">1940s 以前</h4>
+                        <p class="text-xs text-gray-400">廣播情緣：音樂成為可複製的消費品。</p>
+                    </div>
+                    <div class="relative pl-6 border-l border-white/10 pb-2">
+                        <div class="absolute -left-1.5 top-0 w-3 h-3 bg-brand-accent rounded-full"></div>
+                        <h4 class="font-bold text-sm text-brand-accent">1950s-1960s</h4>
+                        <p class="text-xs text-gray-400">搖滾狂熱：披頭四與貓王登場。</p>
+                    </div>
+                    <div class="relative pl-6 border-l border-white/10 pb-2">
+                        <div class="absolute -left-1.5 top-0 w-3 h-3 bg-brand-purple rounded-full"></div>
+                        <h4 class="font-bold text-sm text-brand-purple">1980s</h4>
+                        <p class="text-xs text-gray-400">影像萬歲：MTV 與 MJ 改變遊戲規則。</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 4: Digital Era -->
+            <div class="md:col-span-2 glass-card p-10 bento-item overflow-hidden relative group">
+                <div class="z-10 relative space-y-4">
+                    <span class="text-brand-purple font-display font-bold text-sm tracking-widest">CHAPTER 02</span>
+                    <h2 class="text-3xl font-black">數位逆襲 (2010s 至今)</h2>
+                    <p class="text-gray-400">串流平台與演算法接管了我們。K-Pop 藉由社群媒體，打破了語言屏障，只要節奏夠強、視覺夠猛，一樣能征服全球。</p>
+                </div>
+                <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-brand-purple/20 blur-[80px] rounded-full group-hover:bg-brand-purple/40 transition-all duration-500"></div>
+            </div>
+        </section>
+
+        <!-- TikTok / Attention Economy Section -->
+        <section class="relative">
+            <div class="absolute inset-0 flex items-center justify-center opacity-5 select-none pointer-events-none">
+                <span class="text-[20vw] font-black uppercase tracking-tighter">TikTok</span>
+            </div>
+            <div class="relative grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl md:text-5xl font-black leading-tight">15 秒定生死：<br/><span class="text-brand-accent">注意力經濟</span></h2>
+                    <p class="text-gray-300 leading-loose text-lg">
+                        進入 2020 年代，流行音樂的產製邏輯被徹底重塑。為了不讓聽眾在滑過短影音時「跳過」，現在的歌曲前奏消失了，副歌往往在第一秒就直接炸開。這是一種「快餐式」的感官刺激。
+                    </p>
+                    <div class="p-6 bg-white/5 rounded-2xl border border-brand-accent/30 italic">
+                        "以前是 DJ 告訴你什麼好聽，現在是演算法為你量身打造「資訊繭房」。"
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="glass-card p-6 text-center transform translate-y-8 bento-item">
+                        <div class="text-3xl font-bold text-brand-cyan mb-2">Live</div>
+                        <p class="text-xs text-gray-400">現場演唱會成為<br/>藝人的「續命丹」</p>
+                    </div>
+                    <div class="glass-card p-6 text-center bento-item">
+                        <div class="text-3xl font-bold text-brand-accent mb-2">15s</div>
+                        <p class="text-xs text-gray-400">黃金注意力的<br/>殘酷淘汰機制</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mid-life Crisis / AI / Challenges -->
+        <section class="glass-card p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8">
+                <svg class="w-16 h-16 text-white/10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <div class="max-w-3xl space-y-8">
+                <h2 class="text-4xl font-black">流行音樂也有「中年危機」？</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-3">
+                        <h4 class="text-brand-accent font-bold uppercase tracking-widest text-sm">01. AI 的入侵</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">當生成式 AI 能精準模仿孫燕姿或 Drake 的聲音，且旋律更符合數據喜好時，「創作靈魂」的座標在哪裡？</p>
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="text-brand-cyan font-bold uppercase tracking-widest text-sm">02. 罐頭工廠</h4>
+                        <p class="text-gray-400 text-sm leading-relaxed">為了迎合市場，現代流行樂趨向同質化，聽起來都像同一套軟體算出來的結果。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section class="text-center space-y-12">
+            <h2 class="text-5xl md:text-7xl font-black font-display tracking-tighter">FUTURE <span class="text-gradient">UNIVERSE</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl border border-white/5 bg-white/5 hover:bg-brand-purple/10 transition-colors">
+                    <div class="text-4xl mb-6">👓</div>
+                    <h3 class="text-xl font-bold mb-4">虛擬巡演</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">XR 技術成熟，讓你足不出戶就能與偶像一對一接觸。</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-white/5 bg-white/5 hover:bg-brand-accent/10 transition-colors">
+                    <div class="text-4xl mb-6">💓</div>
+                    <h3 class="text-xl font-bold mb-4">情緒生成 BGM</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">AI 根據你的心跳、血壓與情緒，即時生成只為你存在的音樂。</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-white/5 bg-white/5 hover:bg-brand-cyan/10 transition-colors">
+                    <div class="text-4xl mb-6">🤝</div>
+                    <h3 class="text-xl font-bold mb-4">全民製作人</h3>
+                    <p class="text-sm text-gray-400 leading-relaxed">透過共創文化，流行樂轉變為全球人類共同參與的實驗藝術。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action / Closing -->
+        <section class="py-20 border-t border-white/10 text-center">
+            <div class="max-w-2xl mx-auto space-y-10">
+                <p class="text-3xl font-bold leading-tight">
+                    流行音樂或許會變形，媒介或許會更迭，但那份「想讓旋律佔領心臟」的渴望，將永遠驅使著我們。
+                </p>
+                <div class="inline-block relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-brand-cyan rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    <button class="relative px-12 py-4 bg-brand-black rounded-full text-lg font-bold group-hover:text-brand-cyan transition duration-200">
+                        按下播放鍵，拯救靈魂
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Smooth reveal on scroll interaction
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.bento-item, section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
